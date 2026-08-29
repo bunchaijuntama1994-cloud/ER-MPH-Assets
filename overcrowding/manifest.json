@@ -1,0 +1,15 @@
+{
+  "name": "ER Overcrowding & LOS Tracking",
+  "short_name": "ER Overcrowding",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#E31B23",
+  "theme_color": "#E31B23",
+  "icons": [
+    {
+      "src": "../ER_Overcrowding_180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
