@@ -1,6 +1,6 @@
 {
   "name": "ER MPH Nurse Note",
-  "short_name": "Nurse Note",
+  "short_name": "ER Nurse",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#0B2D5B",
