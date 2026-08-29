@@ -1,15 +1,15 @@
 {
-  "name": "ER Overcrowding & LOS Tracking",
-  "short_name": "ER Overcrowding",
-  "start_url": "./",
-  "display": "standalone",
-  "background_color": "#E31B23",
-  "theme_color": "#E31B23",
+  "name": "ER Overcrowding",
+  "short_name": "ER Over",
   "icons": [
     {
-      "src": "../ER_Overcrowding_180.png",
+      "src": "/ER-MPH-Assets/ER_Overcrowding_180.png",
       "sizes": "180x180",
       "type": "image/png"
     }
-  ]
+  ],
+  "theme_color": "#E31B23",
+  "background_color": "#E31B23",
+  "display": "standalone",
+  "start_url": "/ER-MPH-Assets/overcrowding/"
 }
