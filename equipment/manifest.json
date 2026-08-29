@@ -1,7 +1,7 @@
 {
   "name": "ER MPH ยืม-คืนอุปกรณ์",
   "short_name": "ER อุปกรณ์",
-  "start_url": "./",
+"start_url": "./",
   "display": "standalone",
   "background_color": "#E31B23",
   "theme_color": "#E31B23",
