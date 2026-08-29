@@ -1,0 +1,15 @@
+{
+  "name": "ER MPH Nurse Note",
+  "short_name": "Nurse Note",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0B2D5B",
+  "theme_color": "#0B2D5B",
+  "icons": [
+    {
+      "src": "ER_NurseNote_180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
