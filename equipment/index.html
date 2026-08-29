@@ -18,9 +18,15 @@
 <meta name="theme-color" content="#E31B23">
 
 <script>
-setTimeout(() => {
-  window.location.replace("https://script.google.com/macros/s/AKfycbwi0yqKgco6-HtVLQ1iIkxyYUboBn9ouP-Og9aTIcfMNaBlY8rnRxP-mOCMpJ3SdgedqQ/exec");
-}, 800);
+const APP_URL = "https://script.google.com/macros/s/AKfycbwi0yqKgco6-HtVLQ1iIkxyYUboBn9ouP-Og9aTIcfMNaBlY8rnRxP-mOCMpJ3SdgedqQ/exec";
+
+const isStandalone =
+  window.matchMedia("(display-mode: standalone)").matches ||
+  window.navigator.standalone;
+
+if (isStandalone) {
+  window.location.replace(APP_URL);
+}
 </script>
 <style>
 body{
