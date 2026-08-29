@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,7 +12,7 @@
 <link rel="icon" type="image/png" href="ER_NurseNote_180.png">
 
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="Nurse Note">
+<meta name="apple-mobile-web-app-title" content="ER Nurse Note">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="theme-color" content="#0B2D5B">
 
@@ -27,14 +26,6 @@ const isStandalone =
 if (!isStandalone) {
   window.location.replace(APP_URL);
 }
-
-window.addEventListener("load", () => {
-  if (isStandalone) {
-    setTimeout(() => {
-      window.location.replace(APP_URL);
-    }, 300);
-  }
-});
 </script>
 
 <style>
@@ -48,33 +39,22 @@ body{
   font-family:Arial,sans-serif;
   color:white;
   text-align:center;
-  padding:20px;
 }
 .logo{
   width:150px;
   border-radius:30px;
-  box-shadow:0 15px 40px rgba(0,0,0,.35);
+  box-shadow:0 15px 40px rgba(0,0,0,.25);
 }
-h1{
-  margin:24px 0 10px;
-  font-size:34px;
-  font-weight:700;
-}
-p{
-  font-size:20px;
-  opacity:.9;
-}
+h1{font-size:34px;margin:24px 0 10px;}
+p{font-size:20px;opacity:.9;}
 </style>
-
 </head>
 
 <body>
-
 <div>
-  <img class="logo" src="ER_NurseNote_180.png" alt="ER MPH Nurse Note">
+  <img class="logo" src="ER_NurseNote_180.png" alt="ER Nurse Note">
   <h1>ER MPH</h1>
-  <p>กำลังเปิดระบบ Nurse Note...</p>
+  <p>กำลังเปิด Nurse Note...</p>
 </div>
-
 </body>
 </html>
