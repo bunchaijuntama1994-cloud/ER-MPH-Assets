@@ -19,17 +19,19 @@
 <script>
 const APP_URL = "https://script.google.com/macros/s/AKfycbzKTJ9COQ2MtQU2FLN5WWXXKld7BTGg2tHRKlVGnlGoO2FIlg_DBlR3kf76QgizrtG7KA/exec";
 
+const isIOS =
+  /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+  (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+
 const isStandalone =
   window.matchMedia("(display-mode: standalone)").matches ||
   window.navigator.standalone;
 
-const isiPhone = /iPhone|iPad|iPod/.test(navigator.userAgent);
-
-// เปิดจากไอคอน iPhone → เด้ง
-// เปิดบนคอม → เด้ง
-// เปิด Safari บน iPhone → อยู่หน้า Launcher
-if (isStandalone || isiPhone) {
-  window.location.href = APP_URL;
+// คอม → เด้งเข้า Apps Script
+// iPhone Safari → อยู่หน้า Launcher เพื่อกดแชร์
+// เปิดจากไอคอนบน Home → เด้งเข้า Apps Script
+if (!isIOS || isStandalone) {
+  window.location.replace(APP_URL);
 }
 </script>
 
