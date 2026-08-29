@@ -1,0 +1,15 @@
+{
+  "name": "OP Voice ER MPH",
+  "short_name": "OP Voice",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0B2D5B",
+  "theme_color": "#0B2D5B",
+  "icons": [
+    {
+      "src": "OP_Voice_180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
