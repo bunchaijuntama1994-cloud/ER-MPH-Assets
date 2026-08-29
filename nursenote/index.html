@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>ER MPH Nurse Note</title>
+
+<link rel="manifest" href="manifest.json">
+
+<link rel="apple-touch-icon" sizes="180x180" href="ER_NurseNote_180.png">
+<link rel="icon" type="image/png" href="ER_NurseNote_180.png">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Nurse Note">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#0B2D5B">
+
+<script>
+const APP_URL = "https://script.google.com/macros/s/AKfycbzKTJ9COQ2MtQU2FLN5WWXXKld7BTGg2tHRKlVGnlGoO2FIlg_DBlR3kf76QgizrtG7KA/exec";
+
+const isStandalone =
+  window.matchMedia("(display-mode: standalone)").matches ||
+  window.navigator.standalone;
+
+if (!isStandalone) {
+  window.location.replace(APP_URL);
+}
+
+window.addEventListener("load", () => {
+  if (isStandalone) {
+    setTimeout(() => {
+      window.location.replace(APP_URL);
+    }, 300);
+  }
+});
+</script>
+
+<style>
+body{
+  margin:0;
+  background:#0B2D5B;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  font-family:Arial,sans-serif;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+.logo{
+  width:150px;
+  border-radius:30px;
+  box-shadow:0 15px 40px rgba(0,0,0,.35);
+}
+h1{
+  margin:24px 0 10px;
+  font-size:34px;
+  font-weight:700;
+}
+p{
+  font-size:20px;
+  opacity:.9;
+}
+</style>
+
+</head>
+
+<body>
+
+<div>
+  <img class="logo" src="ER_NurseNote_180.png" alt="ER MPH Nurse Note">
+  <h1>ER MPH</h1>
+  <p>กำลังเปิดระบบ Nurse Note...</p>
+</div>
+
+</body>
+</html>
