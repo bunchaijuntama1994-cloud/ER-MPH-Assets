@@ -24,8 +24,9 @@ const isStandalone =
   window.matchMedia("(display-mode: standalone)").matches ||
   window.navigator.standalone;
 
-// คอม → เด้งเข้า Apps Script
-// เปิดจากไอคอน iPhone → เด้งเข้า Apps Script
+// คอม → เด้งเข้า Web App
+// Safari บน iPhone → อยู่หน้า Launcher
+// เปิดจากไอคอนบน Home → เด้งเข้า Web App
 if (!isIOS || isStandalone) {
   window.location.replace(APP_URL);
 }
