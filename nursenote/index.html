@@ -23,8 +23,13 @@ const isStandalone =
   window.matchMedia("(display-mode: standalone)").matches ||
   window.navigator.standalone;
 
-if (isStandalone) {
-window.location.href = APP_URL;
+const isiPhone = /iPhone|iPad|iPod/.test(navigator.userAgent);
+
+// เปิดจากไอคอน iPhone → เด้ง
+// เปิดบนคอม → เด้ง
+// เปิด Safari บน iPhone → อยู่หน้า Launcher
+if (isStandalone || !isiPhone) {
+  window.location.href = APP_URL;
 }
 </script>
 
