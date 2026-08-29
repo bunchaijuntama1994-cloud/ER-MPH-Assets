@@ -23,7 +23,7 @@ const isStandalone =
   window.matchMedia("(display-mode: standalone)").matches ||
   window.navigator.standalone;
 
-if (!isStandalone) {
+if (isStandalone) {
   window.location.replace(APP_URL);
 }
 </script>
