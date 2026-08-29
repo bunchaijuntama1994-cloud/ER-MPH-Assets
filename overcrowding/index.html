@@ -6,31 +6,56 @@
 
 <title>ER Overcrowding</title>
 
-<link rel="manifest" href="/ER-MPH-Assets/manifest.json">
+<link rel="manifest" href="./manifest.json">
+<link rel="apple-touch-icon" href="../ER_Overcrowding_180.png">
+<link rel="icon" href="../ER_Overcrowding_180.png">
 
-<link rel="apple-touch-icon" sizes="180x180"
-      href="/ER-MPH-Assets/ER_Overcrowding_180.png">
-
-<link rel="icon" type="image/png"
-      href="/ER-MPH-Assets/ER_Overcrowding_180.png">
-
+<meta name="theme-color" content="#E31B23">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="ER Overcrowding">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="theme-color" content="#E31B23">
 
-<script>
-setTimeout(function () {
-  window.location.replace("https://script.google.com/macros/s/AKfycbwRy9Qrri_6KPaQ-rnZdkqPls92f5Kpp_JxIDKlunyd6nBww9r5M5-8hOdM3oXv0M0A/exec");
-}, 2000);
-</script>
+<style>
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#E31B23;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+text-align:center;
+}
+button{
+margin-top:20px;
+padding:14px 28px;
+border:none;
+border-radius:14px;
+font-size:18px;
+background:white;
+color:#E31B23;
+font-weight:bold;
+}
+img{width:140px;}
+</style>
 </head>
 
-<body style="margin:0;background:#E31B23;color:white;font-family:Arial,sans-serif;display:flex;align-items:center;justify-content:center;height:100vh;">
-  <div style="text-align:center;">
-    <img src="/ER-MPH-Assets/ER_Overcrowding_180.png" width="140" alt="ER Overcrowding">
-    <h1>ER Overcrowding</h1>
-    <p>กำลังเปิดระบบ...</p>
-  </div>
+<body>
+
+<div>
+<img src="../ER_Overcrowding_180.png" alt="ER">
+<h1>ER Overcrowding</h1>
+<p>ER Overcrowding & LOS Tracking</p>
+
+<button onclick="openApp()">เปิดระบบ</button>
+
+</div>
+
+<script>
+function openApp(){
+window.location.href="https://script.google.com/macros/s/AKfycbwRy9Qrri_6KPaQ-rnZdkqPls92f5Kpp_JxIDKlunyd6nBww9r5M5-8hOdM3oXv0M0A/exec";
+}
+</script>
+
 </body>
 </html>
