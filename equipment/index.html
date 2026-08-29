@@ -20,13 +20,18 @@
 <script>
 const APP_URL = "https://script.google.com/macros/s/AKfycbwi0yqKgco6-HtVLQ1iIkxyYUboBn9ouP-Og9aTIcfMNaBlY8rnRxP-mOCMpJ3SdgedqQ/exec";
 
+const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
 const isStandalone =
   window.matchMedia("(display-mode: standalone)").matches ||
   window.navigator.standalone;
 
-if (isStandalone) {
+// ถ้าเป็นคอม → เข้า Apps Script ทันที
+// ถ้าเป็น iPhone ที่กดจากหน้า Home → เข้า Apps Script ทันที
+// ถ้าเป็น iPhone Safari ปกติ → อยู่หน้าสีน้ำเงิน เพื่อ Add to Home
+if (!isIOS || isStandalone) {
   window.location.replace(APP_URL);
 }
+</script>
 </script>
 <style>
 body{
